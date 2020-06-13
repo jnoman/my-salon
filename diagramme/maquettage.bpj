@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1591632825" Name="maquettage" Objects="6" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1591895352" Name="maquettage" Objects="7" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -519,12 +519,25 @@ LABL 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:Code>Modelephysique</a:Code>
 <a:CreationDate>1591632808</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591632825</a:ModificationDate>
+<a:ModificationDate>1591637009</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:Location>file:///%[PRJ_ROOT_DIR]%/Modelephysique.mpd</a:Location>
 <a:Extension>mpd</a:Extension>
 <a:ModelDocument.ModelID>F17FAC13-B9B9-4E4D-962B-49AB0292A93F</a:ModelDocument.ModelID>
 <a:ModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o9">
+<a:ObjectID>3EA80C88-9430-4790-95F5-F0CD8820DE65</a:ObjectID>
+<a:Name>diagramme de séquence admin</a:Name>
+<a:Code>diagrammedeséquenceadmin</a:Code>
+<a:CreationDate>1591895342</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1591895352</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/diagramme de séquence admin.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>376E56F5-A3E8-4E67-841A-716C9ED8AA55</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
 </o:ModelDocument>
 </c:ModelsAndFiles>
 </o:Project>

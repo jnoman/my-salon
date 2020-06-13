@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1591637009" Name="maquettage" Objects="6" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1591895593" Name="maquettage" Objects="9" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,8 +12,22 @@
 <a:Code>maquettage</a:Code>
 <a:CreationDate>1591560811</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591560811</a:ModificationDate>
+<a:ModificationDate>1591895478</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Project Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+GenerationSelections=
+RbldDeplinkFile=Yes
+RbldDeplinkGene=Yes
+RbldDeplinkRefr=Yes
+RbldDeplinkMapp=Yes
+RbldDeplinkOpnm=Yes</a:PackageOptionsText>
 <a:ModelOptionsText>[ModelOptions]
 
 [ModelOptions\Prj options]
@@ -525,6 +539,45 @@ LABL 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:Extension>mpd</a:Extension>
 <a:ModelDocument.ModelID>F17FAC13-B9B9-4E4D-962B-49AB0292A93F</a:ModelDocument.ModelID>
 <a:ModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o9">
+<a:ObjectID>3EA80C88-9430-4790-95F5-F0CD8820DE65</a:ObjectID>
+<a:Name>diagramme de séquence admin</a:Name>
+<a:Code>diagrammedeséquenceadmin</a:Code>
+<a:CreationDate>1591895342</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1591895352</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/diagramme de séquence admin.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>376E56F5-A3E8-4E67-841A-716C9ED8AA55</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o10">
+<a:ObjectID>516FFFAF-6AD7-447E-ACEF-6F274CD2B3E8</a:ObjectID>
+<a:Name>diagramme de séquence coiffeur</a:Name>
+<a:Code>diagrammedeséquencecoiffeur</a:Code>
+<a:CreationDate>1591895561</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1591895588</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/diagramme de séquence coiffeur.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>0E9A6223-9006-43B6-B570-DD830ACBACED</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o11">
+<a:ObjectID>B6BDD1F9-4D8E-4241-98AF-4F971A6A8819</a:ObjectID>
+<a:Name>diagramme de séquence client</a:Name>
+<a:Code>diagrammedeséquenceclient</a:Code>
+<a:CreationDate>1591895579</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1591895593</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/diagramme de séquence client.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>4F5DD814-8422-4386-807D-BCBE01746170</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
 </o:ModelDocument>
 </c:ModelsAndFiles>
 </o:Project>

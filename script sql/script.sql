@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de creation :  08/06/2020 18:23:49                      */
+/* Date de creation :  13/06/2020 14:51:08                      */
 /*==============================================================*/
 
 drop schema if exists mySalon;
@@ -45,6 +45,8 @@ create table coiffeur
    adresse              varchar(254) not null,
    nombre_employes      int not null,
    date_fin             datetime not null,
+   genre                varchar(254) not null,
+   image                longblob not null,
    primary key (id_coiffeur)
 );
 
@@ -64,8 +66,8 @@ create table employe
 create table resrvation
 (
    id_reservation       int not null auto_increment,
-   idUser               int not null,
    id_employe           int not null,
+   idUser               int not null,
    date_debut           datetime not null,
    duree_reservation    datetime not null,
    etat_reservation     varchar(254) not null,
@@ -78,7 +80,7 @@ create table resrvation
 create table service
 (
    id_service           int not null auto_increment,
-   id_coiffeur          int,
+   id_coiffeur          int not null,
    duree                datetime not null,
    prix                 numeric(8,0) not null,
    primary key (id_service)
