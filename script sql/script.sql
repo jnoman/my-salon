@@ -47,6 +47,8 @@ create table coiffeur
    date_fin             datetime not null,
    genre                varchar(254) not null,
    image                longblob not null,
+   date_debut_travail   time not null,
+   date_fin_travail     time not null,
    primary key (id_coiffeur)
 );
 
