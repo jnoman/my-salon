@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1591895352" Name="maquettage" Objects="7" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DE20751C-FFDE-47CC-9D45-132ABFBD8EF2}" Label="" LastModificationDate="1593193515" Name="maquettage" Objects="10" Symbols="1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,8 +12,22 @@
 <a:Code>maquettage</a:Code>
 <a:CreationDate>1591560811</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591560811</a:ModificationDate>
+<a:ModificationDate>1591895478</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Project Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+GenerationSelections=
+RbldDeplinkFile=Yes
+RbldDeplinkGene=Yes
+RbldDeplinkRefr=Yes
+RbldDeplinkMapp=Yes
+RbldDeplinkOpnm=Yes</a:PackageOptionsText>
 <a:ModelOptionsText>[ModelOptions]
 
 [ModelOptions\Prj options]
@@ -527,16 +541,55 @@ LABL 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:ModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:ModelClassID>
 </o:ModelDocument>
 <o:ModelDocument Id="o9">
-<a:ObjectID>3EA80C88-9430-4790-95F5-F0CD8820DE65</a:ObjectID>
-<a:Name>diagramme de séquence admin</a:Name>
-<a:Code>diagrammedeséquenceadmin</a:Code>
-<a:CreationDate>1591895342</a:CreationDate>
+<a:ObjectID>F3EC3BF5-FE17-49C0-89B9-1AB89FB1BA38</a:ObjectID>
+<a:Name>authentification</a:Name>
+<a:Code>authentification</a:Code>
+<a:CreationDate>1592908980</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591895352</a:ModificationDate>
+<a:ModificationDate>1592909002</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:Location>file:///%[PRJ_ROOT_DIR]%/diagramme de séquence admin.moo</a:Location>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/authentification.moo</a:Location>
 <a:Extension>moo</a:Extension>
-<a:ModelDocument.ModelID>376E56F5-A3E8-4E67-841A-716C9ED8AA55</a:ModelDocument.ModelID>
+<a:ModelDocument.ModelID>7163E08F-1819-44A1-A371-4BC506CEEBBF</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o10">
+<a:ObjectID>5C71A09D-F1CB-4880-B646-869D020349DE</a:ObjectID>
+<a:Name>Gérer compte coiffeur</a:Name>
+<a:Code>Gérercomptecoiffeur</a:Code>
+<a:CreationDate>1592944419</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1592944470</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/Gérer compte coiffeur.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>39DC04F2-0FF7-4722-B35F-351C1D38AAD9</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o11">
+<a:ObjectID>8721477A-A840-4D89-8A46-093D96CFE7B3</a:ObjectID>
+<a:Name>Coiffeur gérer son service</a:Name>
+<a:Code>Coiffeurgérersonservice</a:Code>
+<a:CreationDate>1593191599</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593192335</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/Coiffeur gérer son service.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>0301433A-B59F-4D85-933E-FF262AB64268</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o12">
+<a:ObjectID>F470C407-7C00-4918-888C-EB11486F9701</a:ObjectID>
+<a:Name>Coiffeur gérer son rendez-vous</a:Name>
+<a:Code>Coiffeurgérersonrendezvous</a:Code>
+<a:CreationDate>1593193405</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593193515</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/Coiffeur gérer son rendez-vous.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>2A283349-4D45-44A3-8DF1-16DA2A3694A0</a:ModelDocument.ModelID>
 <a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
 </o:ModelDocument>
 </c:ModelsAndFiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{F17FAC13-B9B9-4E4D-962B-49AB0292A93F}" Label="" LastModificationDate="1592149829" Name="Modelephysique" Objects="64" Symbols="10" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{F17FAC13-B9B9-4E4D-962B-49AB0292A93F}" Label="" LastModificationDate="1592908621" Name="Modelephysique" Objects="65" Symbols="10" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>Modelephysique</a:Code>
 <a:CreationDate>1591632739</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591893991</a:ModificationDate>
+<a:ModificationDate>1592908406</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {983AB0C2-314A-4EFC-8446-9136E5716118}
 DAT 1591632808
@@ -48,7 +48,9 @@ DLD {05FEAE84-CFAF-4ED6-9B25-961987ADFC99}
 DLD {62691BDD-5646-4087-AB72-FC78AACF074F}
 DLD {18DBDE7A-77E5-4D04-8B2F-AE874C1F532F}
 DLD {38829A18-ADFA-4DA0-8D7A-4EB725D421B0}
-DLD {CD400EDE-8151-44B7-BF54-77594C3238BB}</a:History>
+DLD {CD400EDE-8151-44B7-BF54-77594C3238BB}
+DLD {2633B892-CEAF-4CE2-9903-FD65CF5FA198}
+DLD {22BEC2F0-6883-4B09-988B-E0987C895044}</a:History>
 <a:PackageOptionsText>[FolderOptions]
 
 [FolderOptions\Physical Objects]
@@ -111,7 +113,7 @@ UpdateTableStatistics=Yes
 UpdateColumnStatistics=Yes
 
 [FolderOptions\Physical Objects\Database Generation]
-GenScriptName=my_salon.sql
+GenScriptName=my_salo.sql
 GenScriptName0=script.sql
 GenScriptName1=
 GenScriptName2=
@@ -122,7 +124,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=D:\stage\fil rouge\script sql\
+GenPathName=D:\stage\my salon\script sql\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
@@ -2490,9 +2492,9 @@ PhysOpts=</a:ModelOptionsText>
 <a:ObjectID>CFC714FA-8F8C-4C4C-9EC5-1B1822E7E202</a:ObjectID>
 <a:Name>ModeleOrienteObjet_2</a:Name>
 <a:Code>ModeleOrienteObjet_2</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908406</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591893991</a:ModificationDate>
+<a:ModificationDate>1592908406</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:TargetStereotype/>
 <a:TargetID>983AB0C2-314A-4EFC-8446-9136E5716118</a:TargetID>
@@ -2515,15 +2517,15 @@ PhysOpts=</a:ModelOptionsText>
 </c:DBMS>
 <c:PhysicalDiagrams>
 <o:PhysicalDiagram Id="o5">
-<a:ObjectID>9702A464-6DE9-495D-A25F-96194C5C67FB</a:ObjectID>
+<a:ObjectID>7A4AA0D5-0D4C-4FD7-B253-1DE9DCD4D870</a:ObjectID>
 <a:Name>DiagrammeClasses_1</a:Name>
 <a:Code>DiagrammeClasses_1</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591893991</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {7D6E9754-8D36-43BB-A6CF-BB92E3F4D491}
-DAT 1591893991</a:History>
+DAT 1592908406</a:History>
 <a:DisplayPreferences>[DisplayPreferences]
 
 [DisplayPreferences\PDM]
@@ -3168,8 +3170,8 @@ Shadow=0
 <a:PaperSource>15</a:PaperSource>
 <c:Symbols>
 <o:ReferenceSymbol Id="o6">
-<a:Rect>((3679,-8261), (10653,-6148))</a:Rect>
-<a:ListOfPoints>((7139,-8261),(7183,-6148))</a:ListOfPoints>
+<a:Rect>((3652,-7989), (10626,-6132))</a:Rect>
+<a:ListOfPoints>((6861,-7989),(7264,-6148))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -3188,8 +3190,8 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 </c:Object>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o10">
-<a:Rect>((-10802,-14925), (-1613,-13190))</a:Rect>
-<a:ListOfPoints>((-10802,-14169),(-7116,-14169),(-7116,-13190),(-1613,-13190))</a:ListOfPoints>
+<a:Rect>((-10891,-14909), (-1618,-13157))</a:Rect>
+<a:ListOfPoints>((-10891,-14169),(-7116,-14169),(-7116,-13157),(-1618,-13157))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -3208,8 +3210,9 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 </c:Object>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o13">
-<a:Rect>((-6896,-9379), (78,-7907))</a:Rect>
-<a:ListOfPoints>((-5846,-9154),(-1966,-9154))</a:ListOfPoints>
+<a:ModificationDate>1592908508</a:ModificationDate>
+<a:Rect>((-8621,-9304), (-1309,-7832))</a:Rect>
+<a:ListOfPoints>((-8621,-9079),(-1972,-9079))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -3228,8 +3231,8 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 </c:Object>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o16">
-<a:Rect>((-9283,-2700), (138,2470))</a:Rect>
-<a:ListOfPoints>((-9283,2470),(-3349,2470),(-3349,-2700),(-249,-2700))</a:ListOfPoints>
+<a:Rect>((-9284,-2700), (138,2470))</a:Rect>
+<a:ListOfPoints>((-9284,2470),(-3349,2470),(-3349,-2700),(-249,-2700))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -3248,8 +3251,9 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 </c:Object>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o19">
-<a:Rect>((-15355,-6973), (-1725,2918))</a:Rect>
-<a:ListOfPoints>((-15355,1672),(-5212,1672),(-5212,-6973))</a:ListOfPoints>
+<a:ModificationDate>1592908508</a:ModificationDate>
+<a:Rect>((-15355,-7048), (-4500,2918))</a:Rect>
+<a:ListOfPoints>((-15355,1672),(-7987,1672),(-7987,-7048))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -3292,7 +3296,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:TableSymbol>
 <o:TableSymbol Id="o7">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-3054,-20039), (11648,-7753))</a:Rect>
+<a:Rect>((-3054,-20526), (11648,-7266))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -3315,7 +3319,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:TableSymbol>
 <o:TableSymbol Id="o11">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-21186,-17951), (-9420,-12483))</a:Rect>
+<a:Rect>((-21070,-17951), (-9536,-12483))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -3360,8 +3364,9 @@ LABL 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:TableSymbol>
 <o:TableSymbol Id="o14">
+<a:ModificationDate>1592908508</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-12362,-10096), (-3764,-6097))</a:Rect>
+<a:Rect>((-15137,-10171), (-6539,-6172))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -3390,103 +3395,103 @@ LABL 0 Arial,8,N</a:FontList>
 </c:DefaultDiagram>
 <c:Tables>
 <o:Table Id="o21">
-<a:ObjectID>796211FC-664A-4D16-88F8-0A03447CEA34</a:ObjectID>
+<a:ObjectID>0F1523AE-4370-479E-968B-708607B488D5</a:ObjectID>
 <a:Name>Users</a:Name>
 <a:Code>Users</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {396C5605-1A06-4C39-8FB2-DFE734D0FF8F}
-DAT 1591893991
+DAT 1592908406
 ATT PRIK</a:History>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o26">
-<a:ObjectID>42297E8C-E393-421F-A228-8BD97E0485CC</a:ObjectID>
+<a:ObjectID>D15C77E3-9A2B-48CC-ACAE-1CBE30B7ABAC</a:ObjectID>
 <a:Name>id_user</a:Name>
 <a:Code>idUser</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {01410CA1-6D99-444B-8491-F0FCC7C248D3}
-DAT 1591893991
+DAT 1592908406
 ATT MAND
 ATT PRIM</a:History>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o27">
-<a:ObjectID>FC3D898D-1A3D-45E4-B8B3-FD1B5FDA4DB3</a:ObjectID>
+<a:ObjectID>D09710D5-2FF5-494C-9681-5E53F0349462</a:ObjectID>
 <a:Name>nom</a:Name>
 <a:Code>nom</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {C481854A-B54A-4411-B9AC-B1FB46336622}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o28">
-<a:ObjectID>7DC348C0-4CB5-4E12-A62C-2F6FD8DE5F52</a:ObjectID>
+<a:ObjectID>87E76800-3E60-4B97-9159-9372839A6948</a:ObjectID>
 <a:Name>prenom</a:Name>
 <a:Code>prenom</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {BB26C5A6-63B0-40F6-B75F-643C1830AC0D}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o29">
-<a:ObjectID>7D1AFF80-DD37-4413-B8E4-AF4C751FAF78</a:ObjectID>
+<a:ObjectID>66B3751A-E1AA-4EEE-A02B-879EDCD9B387</a:ObjectID>
 <a:Name>email</a:Name>
 <a:Code>email</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {CB5CA3FB-3456-4457-A80D-5521ABFF69BE}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o30">
-<a:ObjectID>2E1C49C5-60C6-4D15-BF2B-A0E2A27AFFD3</a:ObjectID>
+<a:ObjectID>AD4E1BEE-19A7-4908-B3A4-DE3E95F6A1C0</a:ObjectID>
 <a:Name>password_user</a:Name>
 <a:Code>password_user</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {34987D3D-46C8-47A2-9BBC-0AE1F167707B}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o31">
-<a:ObjectID>84F80DE0-B600-4B1D-8B5B-9D3261BA4096</a:ObjectID>
+<a:ObjectID>1B0F91BF-F57E-4F72-A50D-077D3D334697</a:ObjectID>
 <a:Name>role</a:Name>
 <a:Code>role</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {FC03A3DB-181E-47D1-9C57-2D75207EC442}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
@@ -3495,12 +3500,12 @@ ATT MAND</a:History>
 </c:Columns>
 <c:Keys>
 <o:Key Id="o32">
-<a:ObjectID>216A0F32-0DCA-46F2-8D70-E3E7B03A54C0</a:ObjectID>
+<a:ObjectID>B9232D81-3F0A-4012-992A-D028723BF912</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>Cle_1</a:Code>
-<a:CreationDate>1591894138</a:CreationDate>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o26"/>
@@ -3512,178 +3517,183 @@ ATT MAND</a:History>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o22">
-<a:ObjectID>135D8D74-A7D9-4E3A-9B6E-3C11C7E024C7</a:ObjectID>
-<a:Name>coiffeur</a:Name>
-<a:Code>coiffeur</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>58F4441F-CFFC-4EF0-B04D-33D25F878686</a:ObjectID>
+<a:Name>Salon</a:Name>
+<a:Code>Salon</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1592149829</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {EDFEEE28-5CD9-4D34-BC01-E1642B6BB304}
-DAT 1591893991
+DAT 1592908406
 ATT PRIK</a:History>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o33">
-<a:ObjectID>8C7F02F6-99FE-4110-BB50-0D50813AFF2C</a:ObjectID>
-<a:Name>id_coiffeur</a:Name>
-<a:Code>id_coiffeur</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>1E713E5A-883F-4D05-9AFC-6E2A2AC5C446</a:ObjectID>
+<a:Name>id_salon</a:Name>
+<a:Code>id_salon</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908565</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {05FEAE84-CFAF-4ED6-9B25-961987ADFC99}
-DAT 1591893991
+DAT 1592908406
 ATT MAND
-ATT PRIM</a:History>
+ATT PRIM
+ATT NAME
+ATT CODE</a:History>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o34">
-<a:ObjectID>74C5EDB4-6C99-46C6-AA8B-A20D43529B51</a:ObjectID>
+<a:ObjectID>30CDBA68-09F2-4415-8469-451692CBA9CE</a:ObjectID>
 <a:Name>id_user</a:Name>
 <a:Code>idUser</a:Code>
-<a:CreationDate>1591894138</a:CreationDate>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894164</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
-<a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o35">
-<a:ObjectID>69DC95D8-2A4F-4F13-AB29-02571D80B02F</a:ObjectID>
-<a:Name>telephone</a:Name>
-<a:Code>telephone</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>FAE001A8-D56B-4795-A4CF-3C3471DE64A5</a:ObjectID>
+<a:Name>nom_salon</a:Name>
+<a:Code>nom_salon</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {4AAFFAD5-3CFE-4236-8A68-6213D12D76EB}
-DAT 1591893991
+<a:History>ORG {89A6D961-6C2B-4414-B5F1-C7CD42542F51}
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
-<a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o36">
-<a:ObjectID>588660E1-C003-4A26-9C01-12B87D16A7C5</a:ObjectID>
-<a:Name>ville</a:Name>
-<a:Code>ville</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>F6F05CFE-F2F1-4380-8889-D01FD5B55308</a:ObjectID>
+<a:Name>telephone</a:Name>
+<a:Code>telephone</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {F003FAA7-9CFC-46EA-887E-6A152A5C0158}
-DAT 1591893991
+<a:History>ORG {4AAFFAD5-3CFE-4236-8A68-6213D12D76EB}
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
-<a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o37">
-<a:ObjectID>C5027030-3C77-4514-B5E1-F3500E93A922</a:ObjectID>
-<a:Name>adresse</a:Name>
-<a:Code>adresse</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>22AB8C55-74F5-494D-94EF-A16AEFD30913</a:ObjectID>
+<a:Name>ville</a:Name>
+<a:Code>ville</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {B6D9BFB4-39A1-415C-A31A-684D3B9B2489}
-DAT 1591893991
+<a:History>ORG {F003FAA7-9CFC-46EA-887E-6A152A5C0158}
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
-<a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o38">
-<a:ObjectID>94212652-3281-49CD-993B-64A6D49B62B0</a:ObjectID>
-<a:Name>nombre_employes</a:Name>
-<a:Code>nombre_employes</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>541FF681-FDE0-44FD-8448-5D8509CFF16A</a:ObjectID>
+<a:Name>adresse</a:Name>
+<a:Code>adresse</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {61EBBFD7-71D0-4777-AAD8-85E42A265394}
-DAT 1591893991
-ATT MAND</a:History>
-<a:DataType>int</a:DataType>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o39">
-<a:ObjectID>B9BA3E88-9D71-4C1C-BCC4-84869BE89E0A</a:ObjectID>
-<a:Name>date_fin</a:Name>
-<a:Code>date_fin</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:History>ORG {ADE4664B-76E9-4C15-AD3A-05E4DEA684F9}
-DAT 1591893991
-ATT MAND</a:History>
-<a:DataType>datetime</a:DataType>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o40">
-<a:ObjectID>BE5DF00E-FFFE-41BF-8114-E07C97BDCC4B</a:ObjectID>
-<a:Name>genre</a:Name>
-<a:Code>genre</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:History>ORG {22BEC2F0-6883-4B09-988B-E0987C895044}
-DAT 1591893991
-ATT MAND</a:History>
+<a:History>ORG {B6D9BFB4-39A1-415C-A31A-684D3B9B2489}
+DAT 1592908406</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
-<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o39">
+<a:ObjectID>560C3D53-DAAF-4F8E-92F2-927E433A7230</a:ObjectID>
+<a:Name>nombre_employes</a:Name>
+<a:Code>nombre_employes</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1592908405</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:History>ORG {61EBBFD7-71D0-4777-AAD8-85E42A265394}
+DAT 1592908406</a:History>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o40">
+<a:ObjectID>20007599-71A2-4609-994F-9C6683E1B244</a:ObjectID>
+<a:Name>date_fin</a:Name>
+<a:Code>date_fin</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1592908405</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:History>ORG {ADE4664B-76E9-4C15-AD3A-05E4DEA684F9}
+DAT 1592908406</a:History>
+<a:DataType>datetime</a:DataType>
 </o:Column>
 <o:Column Id="o41">
-<a:ObjectID>18304DC2-9B29-4E78-8CB6-6AB1F1F490AF</a:ObjectID>
-<a:Name>image</a:Name>
-<a:Code>image</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>708DAE95-B1AC-4687-B1F2-6A5CF4BD2157</a:ObjectID>
+<a:Name>genre</a:Name>
+<a:Code>genre</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {2633B892-CEAF-4CE2-9903-FD65CF5FA198}
-DAT 1591893991
-ATT DTTP
-ATT MAND</a:History>
-<a:DataType>longblob</a:DataType>
-<a:Mandatory>1</a:Mandatory>
+<a:History>ORG {22BEC2F0-6883-4B09-988B-E0987C895044}
+DAT 1592908406</a:History>
+<a:DataType>varchar(254)</a:DataType>
+<a:Length>254</a:Length>
 </o:Column>
 <o:Column Id="o42">
-<a:ObjectID>9908D77C-B6E2-4F15-B72D-32D89C2771BA</a:ObjectID>
-<a:Name>date_debut_travail</a:Name>
-<a:Code>date_debut_travail</a:Code>
-<a:CreationDate>1592149643</a:CreationDate>
+<a:ObjectID>ADF0C47A-5AFE-43ED-852B-50B1AB1924FE</a:ObjectID>
+<a:Name>image</a:Name>
+<a:Code>image</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1592149829</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:DataType>time</a:DataType>
-<a:Mandatory>1</a:Mandatory>
+<a:History>ORG {2633B892-CEAF-4CE2-9903-FD65CF5FA198}
+DAT 1592908406</a:History>
+<a:DataType>varchar(254)</a:DataType>
+<a:Length>254</a:Length>
 </o:Column>
 <o:Column Id="o43">
-<a:ObjectID>41ABD2CE-7F26-4FC0-A4E3-AB217733FBD6</a:ObjectID>
+<a:ObjectID>AF5A8D5C-D495-47F6-B83D-47541191A4F6</a:ObjectID>
+<a:Name>date_debut_travail</a:Name>
+<a:Code>date_debut_travail</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1592908405</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:History>ORG {60E74143-4120-4239-BE3E-D534E8698578}
+DAT 1592908406</a:History>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o44">
+<a:ObjectID>3272BC5B-AB73-480E-A2D6-E4E8BCDDE7CF</a:ObjectID>
 <a:Name>date_fin_travail</a:Name>
 <a:Code>date_fin_travail</a:Code>
-<a:CreationDate>1592149643</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1592149829</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:DataType>time</a:DataType>
-<a:Mandatory>1</a:Mandatory>
+<a:History>ORG {047C5765-0B83-4A9F-A6A9-08B3067F1680}
+DAT 1592908406</a:History>
+<a:DataType>datetime</a:DataType>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o44">
-<a:ObjectID>8A1F603A-4657-419B-87EC-B8FBAF33E3AD</a:ObjectID>
+<o:Key Id="o45">
+<a:ObjectID>17758AE7-FF94-440B-82A5-DD87A052E6B6</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>Cle_1</a:Code>
-<a:CreationDate>1591894121</a:CreationDate>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o33"/>
@@ -3691,23 +3701,23 @@ ATT MAND</a:History>
 </o:Key>
 </c:Keys>
 <c:Indexes>
-<o:Index Id="o45">
-<a:ObjectID>276B1A60-4FC4-43DF-A5FB-C94C3189C650</a:ObjectID>
+<o:Index Id="o46">
+<a:ObjectID>0C42A587-DED5-47A0-9A65-45C1044B9505</a:ObjectID>
 <a:Name>Association_1_FK</a:Name>
 <a:Code>Association_1_FK</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908406</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:LinkedObject>
 <o:Reference Ref="o9"/>
 </c:LinkedObject>
 <c:IndexColumns>
-<o:IndexColumn Id="o46">
-<a:ObjectID>4C3CC9CD-CFD4-4645-A69D-66A819B629AE</a:ObjectID>
-<a:CreationDate>1591894138</a:CreationDate>
+<o:IndexColumn Id="o47">
+<a:ObjectID>CDB70CF5-5E86-4C8D-95E9-FBD238B58588</a:ObjectID>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Column>
 <o:Column Ref="o34"/>
@@ -3717,72 +3727,72 @@ ATT MAND</a:History>
 </o:Index>
 </c:Indexes>
 <c:PrimaryKey>
-<o:Key Ref="o44"/>
+<o:Key Ref="o45"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o23">
-<a:ObjectID>09067865-C34A-4A88-938C-D90E82ECF759</a:ObjectID>
-<a:Name>service</a:Name>
-<a:Code>service</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>BF1C698C-397D-4DAD-AC27-BC8EC54C7293</a:ObjectID>
+<a:Name>Service</a:Name>
+<a:Code>Service</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {4FDDC72B-DAE3-409B-A250-9528446D98A7}
-DAT 1591893991
+DAT 1592908406
 ATT PRIK</a:History>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o47">
-<a:ObjectID>4686FFFA-B0A9-4960-AF6A-BE6271A7CF85</a:ObjectID>
+<o:Column Id="o48">
+<a:ObjectID>E6890D35-EC31-4199-91EE-FD2C7207E5FA</a:ObjectID>
 <a:Name>id_service</a:Name>
 <a:Code>id_service</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894081</a:ModificationDate>
+<a:ModificationDate>1592908482</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {A26BADE8-AA80-46BA-9152-03382D5BFB34}
-DAT 1591893991
+DAT 1592908406
 ATT MAND
 ATT PRIM</a:History>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o48">
-<a:ObjectID>782AC038-8AF2-471B-B0A0-3D74020CFACE</a:ObjectID>
-<a:Name>id_coiffeur</a:Name>
-<a:Code>id_coiffeur</a:Code>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:Column Id="o49">
+<a:ObjectID>8BCA23F8-2E07-4B50-A62D-B74D90CEB6BB</a:ObjectID>
+<a:Name>id_salon</a:Name>
+<a:Code>id_salon</a:Code>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894156</a:ModificationDate>
+<a:ModificationDate>1592908599</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o49">
-<a:ObjectID>E3160B24-51FC-4E95-ADAA-6602493F3CBE</a:ObjectID>
+<o:Column Id="o50">
+<a:ObjectID>3FAE3783-CAB2-4134-A564-E9C477AE5A3C</a:ObjectID>
 <a:Name>duree</a:Name>
 <a:Code>duree</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894081</a:ModificationDate>
+<a:ModificationDate>1592908482</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {13FCBD06-57BB-4D17-AB2A-673FAE28CAC6}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>datetime</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o50">
-<a:ObjectID>65CB0359-9E90-44BA-9DBE-25816C2AE14A</a:ObjectID>
+<o:Column Id="o51">
+<a:ObjectID>B376DB84-E5AB-4686-A1C8-0D9D848BEC43</a:ObjectID>
 <a:Name>prix</a:Name>
 <a:Code>prix</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894081</a:ModificationDate>
+<a:ModificationDate>1592908482</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {266639DC-7475-499F-A8DC-77AD91E744A1}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>numeric(8,0)</a:DataType>
 <a:Length>8</a:Length>
@@ -3790,138 +3800,137 @@ ATT MAND</a:History>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o51">
-<a:ObjectID>AEF6AEAA-3BFD-4E2A-9B4E-A467C9AC8185</a:ObjectID>
+<o:Key Id="o52">
+<a:ObjectID>15387304-7273-4A53-A033-CF4B434B5A61</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>Cle_1</a:Code>
-<a:CreationDate>1591894074</a:CreationDate>
+<a:CreationDate>1592908474</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894081</a:ModificationDate>
+<a:ModificationDate>1592908482</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o47"/>
+<o:Column Ref="o48"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:Indexes>
-<o:Index Id="o52">
-<a:ObjectID>496259B0-A174-4D4F-81E6-3C9B3B08EF53</a:ObjectID>
+<o:Index Id="o53">
+<a:ObjectID>9FC830DB-21AE-4638-B6BA-AD7DFAE4D9AD</a:ObjectID>
 <a:Name>Association_2_FK</a:Name>
 <a:Code>Association_2_FK</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908406</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:LinkedObject>
 <o:Reference Ref="o12"/>
 </c:LinkedObject>
 <c:IndexColumns>
-<o:IndexColumn Id="o53">
-<a:ObjectID>D1EBD0C1-27F7-4B83-9DED-EB9387B7BEA0</a:ObjectID>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:IndexColumn Id="o54">
+<a:ObjectID>DA389095-C2D9-41A6-94EC-DF41108FA6CA</a:ObjectID>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Column>
-<o:Column Ref="o48"/>
+<o:Column Ref="o49"/>
 </c:Column>
 </o:IndexColumn>
 </c:IndexColumns>
 </o:Index>
 </c:Indexes>
 <c:PrimaryKey>
-<o:Key Ref="o51"/>
+<o:Key Ref="o52"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o24">
-<a:ObjectID>A0E9112A-EE00-4591-ADEF-F106A31791BB</a:ObjectID>
-<a:Name>resrvation</a:Name>
-<a:Code>resrvation</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>F053EC75-2CD3-42CE-B6F1-713F85CA0AA0</a:ObjectID>
+<a:Name>Resrvation</a:Name>
+<a:Code>Resrvation</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {F6A53F00-330A-4172-B402-20A395CD15C6}
-DAT 1591893991
-MOV COLNCOL
+DAT 1592908406
 ATT PRIK</a:History>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o54">
-<a:ObjectID>CC3E97C0-62EB-4AFE-A2BC-E7A933B1C84E</a:ObjectID>
+<o:Column Id="o55">
+<a:ObjectID>D46EA515-4399-42BD-87BE-6890F0E27A1D</a:ObjectID>
 <a:Name>id_reservation</a:Name>
 <a:Code>id_reservation</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
+<a:ModificationDate>1592908461</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {FE2D9DFF-A4F3-473D-A880-CCAA77DD01B8}
-DAT 1591893991
+DAT 1592908406
 ATT MAND
 ATT PRIM</a:History>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o55">
-<a:ObjectID>72B721C8-0D46-4CF4-BC0F-2EC40BA376E9</a:ObjectID>
+<o:Column Id="o56">
+<a:ObjectID>69844B5D-7237-41E5-82D7-F9E715AF18D1</a:ObjectID>
 <a:Name>id_employe</a:Name>
 <a:Code>id_employe</a:Code>
-<a:CreationDate>1591894065</a:CreationDate>
+<a:CreationDate>1592908466</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o56">
-<a:ObjectID>8EB91F05-4293-400E-AE2B-DC1B7D3D77DC</a:ObjectID>
-<a:Name>id_user</a:Name>
-<a:Code>idUser</a:Code>
-<a:CreationDate>1591894138</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894175</a:ModificationDate>
+<a:ModificationDate>1592908621</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o57">
-<a:ObjectID>D7EE1457-BE6A-4A48-B249-28073B4D0214</a:ObjectID>
-<a:Name>date_debut</a:Name>
-<a:Code>date_debut</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>D0EEA33C-3B5E-4F13-BAB7-AD57F048BCB2</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>idUser</a:Code>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
+<a:ModificationDate>1592908621</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {0C781FA0-CADC-40E9-B6B6-25264D38C20E}
-DAT 1591893991
-ATT MAND</a:History>
-<a:DataType>datetime</a:DataType>
+<a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o58">
-<a:ObjectID>913BA52A-545F-4724-8491-4B8EB0BCFAFA</a:ObjectID>
-<a:Name>duree_reservation</a:Name>
-<a:Code>duree_reservation</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>1ED6B19B-205C-46B1-937F-90017D4E01C5</a:ObjectID>
+<a:Name>date_debut</a:Name>
+<a:Code>date_debut</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
+<a:ModificationDate>1592908461</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:History>ORG {922A42D5-72E3-497F-9677-478C2B27F232}
-DAT 1591893991
+<a:History>ORG {0C781FA0-CADC-40E9-B6B6-25264D38C20E}
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>datetime</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 <o:Column Id="o59">
-<a:ObjectID>5BEC9499-635A-4483-94DD-1B126BD0F1C1</a:ObjectID>
+<a:ObjectID>A73C34AE-1B28-4042-A76D-E9D6609821FD</a:ObjectID>
+<a:Name>duree_reservation</a:Name>
+<a:Code>duree_reservation</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1592908461</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:History>ORG {922A42D5-72E3-497F-9677-478C2B27F232}
+DAT 1592908406
+ATT MAND</a:History>
+<a:DataType>datetime</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o60">
+<a:ObjectID>E51928AD-5479-4EDF-A807-7D9E1233DBE9</a:ObjectID>
 <a:Name>etat_reservation</a:Name>
 <a:Code>etat_reservation</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
+<a:ModificationDate>1592908461</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {18DBDE7A-77E5-4D04-8B2F-AE874C1F532F}
-DAT 1591893991
+DAT 1592908406
 ATT MAND</a:History>
 <a:DataType>varchar(254)</a:DataType>
 <a:Length>254</a:Length>
@@ -3929,145 +3938,145 @@ ATT MAND</a:History>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o60">
-<a:ObjectID>49E696DD-57CA-4B58-9A01-BEB55D46FC9F</a:ObjectID>
+<o:Key Id="o61">
+<a:ObjectID>F5C009FB-801E-452A-8EED-5FCAC3D52192</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>Cle_1</a:Code>
-<a:CreationDate>1591894086</a:CreationDate>
+<a:CreationDate>1592908451</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894113</a:ModificationDate>
+<a:ModificationDate>1592908461</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o54"/>
+<o:Column Ref="o55"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:Indexes>
-<o:Index Id="o61">
-<a:ObjectID>6AA81B73-5E9C-4508-9048-FEADFE8BCCDD</a:ObjectID>
+<o:Index Id="o62">
+<a:ObjectID>D1005A6C-3273-4E49-83EB-71C2C91B6413</a:ObjectID>
 <a:Name>Association_4_FK</a:Name>
 <a:Code>Association_4_FK</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908406</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:LinkedObject>
 <o:Reference Ref="o18"/>
 </c:LinkedObject>
 <c:IndexColumns>
-<o:IndexColumn Id="o62">
-<a:ObjectID>045CB5EA-657B-4FAC-8644-E734EDAC658A</a:ObjectID>
-<a:CreationDate>1591894138</a:CreationDate>
+<o:IndexColumn Id="o63">
+<a:ObjectID>29FB5993-D981-48CD-BE9B-3698C0CE27E2</a:ObjectID>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Column>
-<o:Column Ref="o56"/>
+<o:Column Ref="o57"/>
 </c:Column>
 </o:IndexColumn>
 </c:IndexColumns>
 </o:Index>
 </c:Indexes>
 <c:PrimaryKey>
-<o:Key Ref="o60"/>
+<o:Key Ref="o61"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o25">
-<a:ObjectID>A65A6A15-95D9-4077-9B23-67C75FABCD9F</a:ObjectID>
-<a:Name>employe</a:Name>
-<a:Code>employe</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:ObjectID>6A426371-78B4-47B7-81F7-0C6710AF4BA1</a:ObjectID>
+<a:Name>Employe</a:Name>
+<a:Code>Employe</a:Code>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {38829A18-ADFA-4DA0-8D7A-4EB725D421B0}
-DAT 1591893991
+DAT 1592908406
 ATT PRIK</a:History>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o63">
-<a:ObjectID>42637445-057A-43F3-9FBA-C7439EDD2AC7</a:ObjectID>
+<o:Column Id="o64">
+<a:ObjectID>549BA82A-FC3F-4EA5-9E64-FC696DCC4108</a:ObjectID>
 <a:Name>id_employe</a:Name>
 <a:Code>id_employe</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894070</a:ModificationDate>
+<a:ModificationDate>1592908471</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {CD400EDE-8151-44B7-BF54-77594C3238BB}
-DAT 1591893991
+DAT 1592908406
 ATT MAND
 ATT PRIM</a:History>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o64">
-<a:ObjectID>0EFD2F22-2F44-4515-8131-AC5EFDEA4DC4</a:ObjectID>
-<a:Name>id_coiffeur</a:Name>
-<a:Code>id_coiffeur</a:Code>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:Column Id="o65">
+<a:ObjectID>F1F9E71E-472D-4EEA-98F9-8B7BB9293176</a:ObjectID>
+<a:Name>id_salon</a:Name>
+<a:Code>id_salon</a:Code>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894136</a:ModificationDate>
+<a:ModificationDate>1592908583</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o65">
-<a:ObjectID>2577D81E-BA78-4C65-A45B-A7B99FF14A39</a:ObjectID>
+<o:Key Id="o66">
+<a:ObjectID>435E5FBC-74CD-48BD-BE10-6BFD7EA6818A</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>Cle_1</a:Code>
-<a:CreationDate>1591894065</a:CreationDate>
+<a:CreationDate>1592908466</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894070</a:ModificationDate>
+<a:ModificationDate>1592908471</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o63"/>
+<o:Column Ref="o64"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:Indexes>
-<o:Index Id="o66">
-<a:ObjectID>B3CFE32F-9228-4A97-BF63-042398888843</a:ObjectID>
+<o:Index Id="o67">
+<a:ObjectID>9B1B9369-A16D-47F3-9167-0973EAEB20B9</a:ObjectID>
 <a:Name>Association_3_FK</a:Name>
 <a:Code>Association_3_FK</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908406</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:LinkedObject>
 <o:Reference Ref="o15"/>
 </c:LinkedObject>
 <c:IndexColumns>
-<o:IndexColumn Id="o67">
-<a:ObjectID>24E182B8-DE12-46CC-8780-EF176C736A3C</a:ObjectID>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:IndexColumn Id="o68">
+<a:ObjectID>FC04B708-AA62-4F7E-913D-5FBCEEC1C11A</a:ObjectID>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Column>
-<o:Column Ref="o64"/>
+<o:Column Ref="o65"/>
 </c:Column>
 </o:IndexColumn>
 </c:IndexColumns>
 </o:Index>
 </c:Indexes>
 <c:PrimaryKey>
-<o:Key Ref="o65"/>
+<o:Key Ref="o66"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
 <c:References>
 <o:Reference Id="o9">
-<a:ObjectID>7DAB7E7D-80B4-4B40-BFD9-75FDE8FA9D58</a:ObjectID>
+<a:ObjectID>2A913E4E-6254-4205-AA39-C7F2FB67AB8B</a:ObjectID>
 <a:Name>Association_1</a:Name>
 <a:Code>Association_1</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {84BC11AE-4A1F-4AA8-8980-CD3087C617A0}
-DAT 1591893991
+DAT 1592908405
 ATT MAND
 ATT PKEY</a:History>
 <a:Cardinality>0..*</a:Cardinality>
@@ -4083,11 +4092,11 @@ ATT PKEY</a:History>
 <o:Key Ref="o32"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o68">
-<a:ObjectID>D10F8EB9-FEF2-49DD-8368-C6EB420595AC</a:ObjectID>
-<a:CreationDate>1591894138</a:CreationDate>
+<o:ReferenceJoin Id="o69">
+<a:ObjectID>0A232F9C-A823-479D-8005-FF1814D70F93</a:ObjectID>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Object1>
 <o:Column Ref="o26"/>
@@ -4099,15 +4108,15 @@ ATT PKEY</a:History>
 </c:Joins>
 </o:Reference>
 <o:Reference Id="o12">
-<a:ObjectID>018AA883-880C-4CE6-BBA8-B361AC149A8C</a:ObjectID>
+<a:ObjectID>7C7B93DC-F121-4D06-937C-E03E797D5981</a:ObjectID>
 <a:Name>Association_2</a:Name>
 <a:Code>Association_2</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {5BCD0394-A8D2-449C-B171-26F562B4D052}
-DAT 1591893991
+DAT 1592908405
 ATT MAND
 ATT PKEY</a:History>
 <a:Cardinality>0..*</a:Cardinality>
@@ -4120,34 +4129,34 @@ ATT PKEY</a:History>
 <o:Table Ref="o23"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o44"/>
+<o:Key Ref="o45"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o69">
-<a:ObjectID>EB687B92-48B3-40AE-B18F-5E4B3F49CD3A</a:ObjectID>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:ReferenceJoin Id="o70">
+<a:ObjectID>3E6070DE-8E97-402A-A973-2ADC8287A181</a:ObjectID>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Object1>
 <o:Column Ref="o33"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o48"/>
+<o:Column Ref="o49"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 <o:Reference Id="o15">
-<a:ObjectID>8A9B3933-D1E7-494A-B2B7-D889BF086F75</a:ObjectID>
+<a:ObjectID>ACA0B3DB-98AA-4365-9BA1-997F96F528A3</a:ObjectID>
 <a:Name>Association_3</a:Name>
 <a:Code>Association_3</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {324A6DD3-477F-4FC6-B8B0-42C14B6E8F41}
-DAT 1591893991
+DAT 1592908405
 ATT MAND
 ATT PKEY</a:History>
 <a:Cardinality>1..*</a:Cardinality>
@@ -4160,34 +4169,34 @@ ATT PKEY</a:History>
 <o:Table Ref="o25"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o44"/>
+<o:Key Ref="o45"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o70">
-<a:ObjectID>D78B2938-9514-4EE4-95FE-B7900D2E6BE0</a:ObjectID>
-<a:CreationDate>1591894121</a:CreationDate>
+<o:ReferenceJoin Id="o71">
+<a:ObjectID>48674C2A-5CD7-4ABB-877D-B7B3CD3AB56B</a:ObjectID>
+<a:CreationDate>1592908486</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894131</a:ModificationDate>
+<a:ModificationDate>1592908503</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Object1>
 <o:Column Ref="o33"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o64"/>
+<o:Column Ref="o65"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 <o:Reference Id="o18">
-<a:ObjectID>8A71B870-0322-47AA-8B02-8154069CA977</a:ObjectID>
+<a:ObjectID>FA07CDE6-6158-4324-86DB-E190C25CAB87</a:ObjectID>
 <a:Name>Association_4</a:Name>
 <a:Code>Association_4</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {5E635FC4-C875-4678-A5F8-A7072B67BA9B}
-DAT 1591893991
+DAT 1592908405
 ATT MAND
 ATT PKEY</a:History>
 <a:Cardinality>0..*</a:Cardinality>
@@ -4203,31 +4212,31 @@ ATT PKEY</a:History>
 <o:Key Ref="o32"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o71">
-<a:ObjectID>6345E799-C627-429B-BB83-5802BB212E5D</a:ObjectID>
-<a:CreationDate>1591894138</a:CreationDate>
+<o:ReferenceJoin Id="o72">
+<a:ObjectID>6B500833-4AED-4E25-BF9F-65D17FFAF529</a:ObjectID>
+<a:CreationDate>1592908514</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894147</a:ModificationDate>
+<a:ModificationDate>1592908524</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Object1>
 <o:Column Ref="o26"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o56"/>
+<o:Column Ref="o57"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 <o:Reference Id="o20">
-<a:ObjectID>B6E0F8BF-7EE8-480D-8386-D643A8365B05</a:ObjectID>
+<a:ObjectID>73A88C95-AF07-4EF6-B4BC-81A7324ADB18</a:ObjectID>
 <a:Name>Association_5</a:Name>
 <a:Code>Association_5</a:Code>
-<a:CreationDate>1591893991</a:CreationDate>
+<a:CreationDate>1592908405</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894070</a:ModificationDate>
+<a:ModificationDate>1592908471</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:History>ORG {62691BDD-5646-4087-AB72-FC78AACF074F}
-DAT 1591893991
+DAT 1592908405
 ATT MAND
 ATT PKEY</a:History>
 <a:Cardinality>0..*</a:Cardinality>
@@ -4240,27 +4249,27 @@ ATT PKEY</a:History>
 <o:Table Ref="o24"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o65"/>
+<o:Key Ref="o66"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o72">
-<a:ObjectID>56FD99D6-D86E-4080-A14A-65ADFFAC3C44</a:ObjectID>
-<a:CreationDate>1591894065</a:CreationDate>
+<o:ReferenceJoin Id="o73">
+<a:ObjectID>1A25243A-C138-46AC-AE3E-09634492C5E2</a:ObjectID>
+<a:CreationDate>1592908466</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591894070</a:ModificationDate>
+<a:ModificationDate>1592908471</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Object1>
-<o:Column Ref="o63"/>
+<o:Column Ref="o64"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o55"/>
+<o:Column Ref="o56"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 </c:References>
 <c:DefaultGroups>
-<o:Group Id="o73">
+<o:Group Id="o74">
 <a:ObjectID>96F80CE3-C90E-4392-BDEE-5CD857E44BA7</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -4271,13 +4280,13 @@ ATT PKEY</a:History>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o74">
+<o:TargetModel Id="o75">
 <a:ObjectID>1620BE30-6694-4F8E-B94D-683EA2CB375E</a:ObjectID>
 <a:Name>MySQL 5.0</a:Name>
 <a:Code>MYSQL50</a:Code>
 <a:CreationDate>1591632773</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591636736</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:TargetModelURL>file:///%_DBMS%/mysql50.xdb</a:TargetModelURL>
 <a:TargetModelID>F4F16ECD-F2F1-4006-AF6F-638D5C65F35E</a:TargetModelID>
@@ -4286,13 +4295,13 @@ ATT PKEY</a:History>
 <o:Shortcut Ref="o4"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o75">
+<o:TargetModel Id="o76">
 <a:ObjectID>41B9129B-8229-45C9-AF26-45A85065C208</a:ObjectID>
 <a:Name>ModeleOrienteObjet_2</a:Name>
 <a:Code>ModeleOrienteObjet_2</a:Code>
 <a:CreationDate>1591632808</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591636736</a:ModificationDate>
+<a:ModificationDate>1592908405</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/ModeleOrienteObjet_2.moo</a:TargetModelURL>
 <a:TargetModelID>983AB0C2-314A-4EFC-8446-9136E5716118</a:TargetModelID>
