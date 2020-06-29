@@ -32,7 +32,7 @@ create table Employe
 /*==============================================================*/
 create table Resrvation
 (
-   id_reservation       int not null,
+   id_reservation       int not null auto_increment,
    id_employe           int not null,
    idUser               int not null,
    date_debut           datetime not null,
@@ -46,8 +46,8 @@ create table Resrvation
 /*==============================================================*/
 create table Salon
 (
-   id_salon             int not null,
-   idUser               int,
+   id_salon             int not null auto_increment,
+   idUser               int not null,
    nom_salon            varchar(254),
    telephone            varchar(254),
    ville                varchar(254),
@@ -66,7 +66,7 @@ create table Salon
 /*==============================================================*/
 create table Service
 (
-   id_service           int not null,
+   id_service           int not null auto_increment,
    id_salon             int not null,
    duree                datetime not null,
    prix                 numeric(8,0) not null,
@@ -78,10 +78,10 @@ create table Service
 /*==============================================================*/
 create table Users
 (
-   idUser               int not null,
+   idUser               int not null auto_increment,
    nom                  varchar(254) not null,
    prenom               varchar(254) not null,
-   email                varchar(254) not null,
+   email                varchar(254) not null unique,
    password_user        varchar(254) not null,
    roles                varchar(254) not null,
    primary key (idUser)
@@ -104,3 +104,16 @@ alter table Service add constraint FK_Association_2 foreign key (id_salon)
 
 
 insert into users(nom,prenom,email,password_user,roles) values('admin','admin','admin@gmail.com','Admin@123','admin');
+
+DROP TRIGGER IF EXISTS add_salon;
+DELIMITER &&
+Create Trigger add_salon 
+after insert 
+on Users
+For each ROW 
+BEGIN 
+	IF new.roles = 'coiffeur' THEN
+    	insert into Salon(idUser) values(new.idUser);
+	END IF;
+END&& 
+DELIMITER ;

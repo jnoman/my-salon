@@ -3170,8 +3170,8 @@ Shadow=0
 <a:PaperSource>15</a:PaperSource>
 <c:Symbols>
 <o:ReferenceSymbol Id="o6">
-<a:Rect>((3652,-7989), (10626,-6132))</a:Rect>
-<a:ListOfPoints>((6861,-7989),(7264,-6148))</a:ListOfPoints>
+<a:Rect>((3676,-7989), (10650,-6131))</a:Rect>
+<a:ListOfPoints>((7163,-7989),(7163,-6148))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>

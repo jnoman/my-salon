@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{983AB0C2-314A-4EFC-8446-9136E5716118}" Label="" LastModificationDate="1592908405" Name="ModeleOrienteObjet_2" Objects="41" Symbols="10" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{983AB0C2-314A-4EFC-8446-9136E5716118}" Label="" LastModificationDate="1592908710" Name="ModeleOrienteObjet_2" Objects="41" Symbols="10" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -2809,11 +2809,11 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Attributes>
 <o:Attribute Id="o32">
 <a:ObjectID>05FEAE84-CFAF-4ED6-9B25-961987ADFC99</a:ObjectID>
-<a:Name>id_coiffeur</a:Name>
-<a:Code>id_coiffeur</a:Code>
+<a:Name>id_salon</a:Name>
+<a:Code>id_salon</a:Code>
 <a:CreationDate>1591633201</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1591633215</a:ModificationDate>
+<a:ModificationDate>1592908710</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
