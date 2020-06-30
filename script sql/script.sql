@@ -7,6 +7,8 @@ drop schema if exists mySalon;
 
 create schema mySalon;
 
+use mySalon;
+
 drop table if exists Employe;
 
 drop table if exists Resrvation;
