@@ -19,12 +19,14 @@ drop table if exists Service;
 
 drop table if exists Users;
 
+drop table if exists ligneReservation;
+
 /*==============================================================*/
 /* Table : Employe                                              */
 /*==============================================================*/
 create table Employe
 (
-   id_employe           int not null,
+   id_employe           int not null auto_increment,
    id_salon             int not null,
    primary key (id_employe)
 );
@@ -54,12 +56,12 @@ create table Salon
    telephone            varchar(254),
    ville                varchar(254),
    adresse              varchar(254),
-   nombre_employes      int,
-   date_fin             datetime,
-   genre                varchar(254),
+   nombre_employes      int not null,
+   date_fin             datetime not null,
+   genre                varchar(254) not null,
    image                varchar(254),
-   date_debut_travail   datetime,
-   date_fin_travail     datetime,
+   date_debut_travail   datetime default '09:00:00',
+   date_fin_travail     datetime default '21:00:00',
    primary key (id_salon)
 );
 
@@ -89,6 +91,17 @@ create table Users
    primary key (idUser)
 );
 
+/*==============================================================*/
+/* Table : ligneReservation                                     */
+/*==============================================================*/
+create table ligneReservation
+(
+   id_ligne_reservation int not null auto_increment,
+   id_reservation       int not null,
+   id_service           int not null,
+   primary key (id_ligne_reservation)
+);
+
 alter table Employe add constraint FK_Association_3 foreign key (id_salon)
       references Salon (id_salon) on delete restrict on update restrict;
 
@@ -103,19 +116,28 @@ alter table Salon add constraint FK_Association_1 foreign key (idUser)
 
 alter table Service add constraint FK_Association_2 foreign key (id_salon)
       references Salon (id_salon) on delete restrict on update restrict;
+      
+alter table ligneReservation add constraint FK_Reference_6 foreign key (id_reservation)
+      references Resrvation (id_reservation) on delete restrict on update restrict;
+
+alter table ligneReservation add constraint FK_Reference_7 foreign key (id_service)
+      references Service (id_service) on delete restrict on update restrict;
+
 
 
 insert into users(nom,prenom,email,password_user,roles) values('admin','admin','admin@gmail.com','Admin@123','admin');
 
-DROP TRIGGER IF EXISTS add_salon;
+DROP TRIGGER IF EXISTS add_employe;
 DELIMITER &&
-Create Trigger add_salon 
+Create Trigger add_employe 
 after insert 
-on Users
+on Salon
 For each ROW 
 BEGIN 
-	IF new.roles = 'coiffeur' THEN
-    	insert into Salon(idUser) values(new.idUser);
-	END IF;
+	DECLARE i INT DEFAULT 1;
+	WHILE i <= new.nombre_employes DO
+    	insert into Employe(id_salon) values(new.id_salon);
+        SET i = i + 1;
+    END WHILE;
 END&& 
 DELIMITER ;
