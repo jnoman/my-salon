@@ -1,7 +1,7 @@
 <?php
     session_start();
     $_SESSION['id']='1';
-    $_SESSION['type']='admin';
+    $_SESSION['type']='coiffeur';
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -53,6 +53,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link scroll" href="listRendez-vous.php">list rendez-vous</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link scroll" href="monSalon.php">mon salon</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link scroll" href="deconnection.php">deconnection</a>

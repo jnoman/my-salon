@@ -1,3 +1,3 @@
 <?php
-    require 'include/menu.php';
+    require 'include/footer.php';
 ?>
