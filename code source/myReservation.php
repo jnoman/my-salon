@@ -1,5 +1,5 @@
 <?php
-    require 'include/footer.php';
+    require 'include/header.php';
     if(!isset($_SESSION['id']))
     {
         echo "<script>{window.location.href = 'connection.php'};</script>";

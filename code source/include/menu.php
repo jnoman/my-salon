@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['id']='1';
+    $_SESSION['id']='2';
     $_SESSION['type']='coiffeur';
     echo '<!DOCTYPE html>
     <html lang="en">

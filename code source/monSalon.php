@@ -1,5 +1,5 @@
 <?php
-    require 'include/footer.php';
+    require 'include/header.php';
     if(!isset($_SESSION['id']))
     {
         echo "<script>{window.location.href = 'connection.php'};</script>";
@@ -16,7 +16,9 @@
         $statement = $db->prepare("Select * from Salon where idUser = $id");
         $statement->execute(); 
         $item = $statement->fetch();
-        echo '<form method="POST" action="" enctype="multipart/form-data"><div class="divstandard">
+        $statement1 = $db->prepare("Select * from ville");
+        $statement1->execute(); 
+        echo '<form method="POST" id="foo" action="" enctype="multipart/form-data"><div class="divstandard">
             <script language="JavaScript">
                 function showPreview(ele)
                 {
@@ -42,23 +44,30 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>nom salon</label>
-                    <input type="text" class="form-control" name="nomSalon" required value="'.$item["nom_salon"].'">
+                    <input type="text" class="form-control" name="nomSalon" value="'.$item["nom_salon"].'" pattern="^[a-zA-Z_- \']{10,}$" minlength="10" title="Le nom de la salon contient au moins 10 caractères" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label>telephone</label>
-                    <input type="tele" class="form-control" name="telephone" required value="'.$item["telephone"].'">
+                    <label>téléphone</label>
+                    <input type="tele" class="form-control" name="telephone" pattern="^(06|05)([0-9]{8})$" minlength="10" maxlength="10" title="Le numéro de téléphone contient 10 numéros" required value="'.$item["telephone"].'" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label>adresse</label>
-                    <input type="text" class="form-control" name="adresse" required value="'.$item["adresse"].'">
+                    <input type="text" class="form-control" name="adresse" pattern="^[A-z0-9_- \']{10,}$" minlength="10" title="L\'adresse contient les caractères et les numéros" required value="'.$item["adresse"].'">
                 </div>
                 <div class="form-group col-md-4">
                     <label>ville</label>
-                    <select class="form-control" name="ville">
-                        <option value="safi">safi</option>
-                    </select>
+                    <select class="form-control" name="ville">';
+                        if ($item["ville"]==null) 
+                        {
+                            echo '<option>sélectionner votre ville</option>';
+                        }
+                        while($row = $statement1->fetch())
+                        {
+                            echo '<option value="'. $row["nom_ville"].'"';if($item["ville"]==$row["nom_ville"]){echo 'selected="selected"';} echo'>'. $row["nom_ville"].'</option>';
+                        }
+                    echo '</select>
                 </div>
             </div>
             <div class="form-row">
@@ -71,12 +80,12 @@
                 <input class="form-control" type="time" min="16:00" max="23:59" name="dateFinTravail" value="'.date('H:i',strtotime($item["date_fin_travail"])).'">
             </div>
             </div>
-                <button type="submit" class="btn btn-info btn-lg" name="updateSalon">Modifier</button>
-                <input type="button" value="Annuler" onClick="Annuler()" class="btn btn-info btn-lg"/>
+                <button type="submit" class="btn_stndard" name="updateSalon">Modifier</button>
+                <input type="button" value="Annuler" onClick="Annuler()" class="btn_stndard"/>
             </div>
         </form>';
         Database::disconnect();
-
+        require 'include/footer.php';
 
         if(isset($_POST['updateSalon']))
         {
