@@ -6,14 +6,14 @@
     }
     elseif($_SESSION['type'] != "coiffeur")
     {
-        echo "<div class='messageErreur'><p>Vous n'êtes pas autorisé à accéder à cette page</p></div>";
+        echo "<div class='messageErreur'><p class='text-center font-weight-bolder'>Vous n'êtes pas autorisé à accéder à cette page</p></div>";
     }
     else
     {
         require 'include/database.php';
         $id=$_SESSION['id'];
         $db = Database::connect();
-        $statement = $db->prepare("SELECT id_reservation,date_debut,nom,prixT FROM resrvation,users,employe,salon WHERE resrvation.idUser=users.idUser and resrvation.id_employe=employe.id_employe and employe.id_salon=salon.id_salon and salon.idUser=$id and etat_reservation='en attente'");
+        $statement = $db->prepare("SELECT id_reservation,date_debut,nom,prixT FROM resrvation,users,employe,salon WHERE resrvation.idUser=users.idUser and resrvation.id_employe=employe.id_employe and employe.id_salon=salon.id_salon and salon.idUser=$id and etat_reservation='en attente' ORDER BY id_reservation ASC");
         $statement->execute();
 
         if ($statement->rowCount() > 0) {
@@ -31,9 +31,9 @@
                 </thead>
                 <tbody>';
             while($row = $statement->fetch()) {
-                echo '<tr data-href="detailRendez-vous.php?idRendez-vous='.$row["id_reservation"].'">
+                echo '<tr data-href="detailRendez-vous.php?idRendezVous='.$row["id_reservation"].'">
                         <form method="POST" action="">
-                        <th scope="row" name="idproduit">'. $row["id_reservation"].'</th>
+                        <th scope="row">'. $row["id_reservation"].'</th>
                         <td>'. $row["nom"].'</td>
                         <td>'. $row["date_debut"].'</td>
                         <td>'. $row["prixT"].'</td>
@@ -49,7 +49,6 @@
             echo '<div class="messageErreur"><p class="text-center font-weight-bolder">Aucun rendez-vous</p></div>';
         }
         Database::disconnect();
-        include('include/footer.php');
         echo '<script>$("tr[data-href]").on("click", function() {
             document.location = $(this).data("href");
         });</script>';
@@ -76,4 +75,5 @@
             echo '<script>javascript:history.go(-1);</script>';
         }
     }
+    include('include/footer.php');
 ?>

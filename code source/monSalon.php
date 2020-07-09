@@ -6,7 +6,7 @@
     }
     elseif($_SESSION['type'] != "coiffeur")
     {
-        echo "<div class='messageErreur'><p>Vous n'êtes pas autorisé à accéder à cette page</p></div>";
+        echo "<div class='messageErreur'><p class='text-center font-weight-bolder'>Vous n'êtes pas autorisé à accéder à cette page</p></div>";
     }
     else
     {
@@ -44,7 +44,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>nom salon</label>
-                    <input type="text" class="form-control" name="nomSalon" value="'.$item["nom_salon"].'" pattern="^[a-zA-Z_- \']{10,}$" minlength="10" title="Le nom de la salon contient au moins 10 caractères" required>
+                    <input type="text" class="form-control" name="nomSalon" value="'.$item["nom_salon"].'" pattern="^[a-zA-Z_\- \']{10,}$" minlength="10" title="Le nom de la salon contient au moins 10 caractères" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label>téléphone</label>
@@ -80,13 +80,11 @@
                 <input class="form-control" type="time" min="16:00" max="23:59" name="dateFinTravail" value="'.date('H:i',strtotime($item["date_fin_travail"])).'">
             </div>
             </div>
-                <button type="submit" class="btn_stndard" name="updateSalon">Modifier</button>
-                <input type="button" value="Annuler" onClick="Annuler()" class="btn_stndard"/>
+                <button type="submit" class="btn btn-lg btn_stndard" name="updateSalon">Modifier</button>
+                <input type="button" value="Annuler" onClick="Annuler()" class="btn btn-info btn_stndard"/>
             </div>
         </form>';
         Database::disconnect();
-        require 'include/footer.php';
-
         if(isset($_POST['updateSalon']))
         {
             try{
@@ -113,4 +111,5 @@
             echo '<script>javascript:history.go(-1);</script>';
         }
     }
+    require 'include/footer.php';
 ?>
