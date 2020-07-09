@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label>téléphone</label>
-                    <input type="tele" class="form-control" name="telephone" pattern="^(06|05)([0-9]{8})$" minlength="10" maxlength="10" title="Le numéro de téléphone contient 10 numéros" required value="'.$item["telephone"].'" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                    <input type="tele" class="form-control" name="telephone" pattern="^(07|06|05)([0-9]{8})$" minlength="10" maxlength="10" title="Le numéro de téléphone contient 10 numéros" required value="'.$item["telephone"].'" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                 </div>
             </div>
             <div class="form-row">

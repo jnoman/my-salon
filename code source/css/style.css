@@ -78,7 +78,7 @@ a.navbar-brand span {
 
 .btn_stndard {
   outline: none;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 14px;
   color: #fff;
   background: #00a98f;
@@ -87,7 +87,7 @@ a.navbar-brand span {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  width: 300px;
+  width: 250px;
   -webkit-box-shadow: 4px 4px rgba(187, 188, 189, 0.5);
           box-shadow: 4px 4px rgba(187, 188, 189, 0.5);
   margin-right: 40px;
@@ -96,5 +96,9 @@ a.navbar-brand span {
 .btn_stndard:hover {
   background: #f3f3f3;
   color: #333;
+}
+
+.table-striped thead {
+  background-color: #00a98f;
 }
 /*# sourceMappingURL=style.css.map */
