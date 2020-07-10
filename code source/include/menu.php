@@ -1,7 +1,7 @@
 <?php
     session_start();
-    $_SESSION['id']='2';
-    $_SESSION['type']='coiffeur';
+    $_SESSION['id']='3';
+    $_SESSION['type']='client';
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -29,6 +29,9 @@
                                 if(!isset($_SESSION['id']) || !isset($_SESSION['type']))
                                 {
                                 echo '<li class="nav-item">
+                                    <a class="nav-link scroll" href="listCoiffeurs.php">list coiffeurs</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link scroll" href="connection.php">connection/inscription</a>
                                 </li>';
                                 }

@@ -84,6 +84,7 @@ create table Salon
 create table Service
 (
    id_service           int not null auto_increment,
+   nom_service          varchar(254) not null,
    id_salon             int not null,
    duree                time not null,
    prix                 numeric(8,0) not null,

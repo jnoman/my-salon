@@ -74,3 +74,9 @@
     }
     require 'include/footer.php';
 ?>
+<script>
+    function Annuler()
+    {
+        window.location.href = "listServices.php";
+    }
+</script>
