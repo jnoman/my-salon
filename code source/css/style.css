@@ -105,4 +105,9 @@ a.navbar-brand span {
 .standardCard {
   cursor: pointer;
 }
+
+.divsubmit, .divsubmit:hover {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
