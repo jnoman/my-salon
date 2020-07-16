@@ -32,7 +32,10 @@
                                     <a class="nav-link scroll" href="listCoiffeurs.php">list coiffeurs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link scroll" href="connection.php">connection/inscription</a>
+                                    <a class="nav-link scroll" href="connection.php">connection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scroll" href="inscription.php">inscription</a>
                                 </li>';
                                 }
                                 else

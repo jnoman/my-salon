@@ -14,7 +14,7 @@
         $id=$_SESSION['id'];
         $idSalon=$_GET["idSalon"];
         $db = Database::connect();
-        $statement = $db->prepare("SELECT * FROM salon WHERE id_salon=$idSalon and date_fin>=CURRENT_DATE");
+        $statement = $db->prepare("SELECT nom_salon,adresse,ville,genre,image,date_debut_travail,date_fin_travail FROM salon WHERE id_salon=$idSalon and date_fin>=CURRENT_DATE");
         $statement->execute();
         if($item = $statement->fetch())
         {
@@ -24,7 +24,6 @@
             echo '<div class="messageErreur"><p class="text-center font-weight-bolder">id de salon n\'est pas valid</p></div>';
         }
         Database::disconnect();
-        
     }
     else 
     {
