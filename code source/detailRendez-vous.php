@@ -16,11 +16,11 @@
         $db = Database::connect();
         if($_SESSION['type'] == "client")
         {
-            $statement = $db->prepare("SELECT service.* FROM service,lignereservation,resrvation WHERE service.id_service=lignereservation.id_service and lignereservation.id_reservation=$idRendezVous and lignereservation.id_ligne_reservation=resrvation.id_reservation and resrvation.idUser=$id");
+            $statement = $db->prepare("SELECT service.* FROM service,lignereservation,resrvation WHERE service.id_service=lignereservation.id_service and lignereservation.id_reservation=$idRendezVous and lignereservation.id_reservation=resrvation.id_reservation and resrvation.idUser=$id");
         }
         else
         {
-            $statement = $db->prepare("SELECT service.* FROM service,lignereservation,resrvation,employe,salon WHERE service.id_service=lignereservation.id_service and lignereservation.id_reservation=$idRendezVous and lignereservation.id_ligne_reservation=resrvation.id_reservation and resrvation.id_employe=employe.id_employe and employe.id_salon=salon.id_salon and salon.idUser=$id");
+            $statement = $db->prepare("SELECT service.* FROM service,lignereservation,resrvation,employe,salon WHERE service.id_service=lignereservation.id_service and lignereservation.id_reservation=$idRendezVous and lignereservation.id_reservation=resrvation.id_reservation and resrvation.id_employe=employe.id_employe and employe.id_salon=salon.id_salon and salon.idUser=$id");
         }
         $statement->execute();
 
@@ -41,7 +41,7 @@
                         <th scope="row">'. $row["id_service"].'</th>
                         <td>'. $row["nom_service"].'</td>
                         <td>'. $row["duree"].'</td>
-                        <td>'. $row["prix"].'</td>
+                        <td>'. $row["prix"].' Dh</td>
                     </tr>';
             }
             echo "</tbody>

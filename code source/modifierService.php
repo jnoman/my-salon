@@ -56,7 +56,7 @@
                     $duree=$_POST['duree'];
                     $statement = $db->prepare("UPDATE service set nom_service='$nomService', duree='$duree', prix=$prix where id_service=$idService");
                     $statement->execute();
-                    echo "<script>alert(\"La modification de service  et terminer avec succès\");{window.location.href = 'listServices.php'};</script>";
+                    echo "<script>alert(\"La modification de service  est terminer avec succès\");{window.location.href = 'listServices.php'};</script>";
                 }
                 else {
                     echo "<script>alert(\"Le nom de service existe déjà\");</script>";

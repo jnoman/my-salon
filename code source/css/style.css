@@ -110,4 +110,8 @@ a.navbar-brand span {
   text-decoration: none;
   color: black;
 }
+
+.divcard div {
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */

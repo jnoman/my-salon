@@ -44,7 +44,7 @@
                     $duree=$_POST['duree'];
                     $statement = $db->prepare("INSERT INTO service(id_salon,nom_service,duree,prix) SELECT id_salon,'$nomService','$duree',$prix FROM salon WHERE salon.idUser=$id");
                     $statement->execute();
-                    echo "<script>alert(\"L'insertion de service  et terminer avec succès\");{window.location.href = 'listServices.php'};</script>";
+                    echo "<script>alert(\"L'insertion de service  est terminer avec succès\");{window.location.href = 'listServices.php'};</script>";
                 }
                 else {
                     echo "<script>alert(\"Le nom de service existe déjà\");</script>";

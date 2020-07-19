@@ -52,7 +52,7 @@ create table Resrvation
    id_employe           int not null,
    idUser               int not null,
    date_debut           datetime not null,
-   duree_reservation    time not null,
+   date_fin             datetime not null,
    etat_reservation     varchar(254) not null,
    prixT                numeric(8,0) not null,
    primary key (id_reservation)

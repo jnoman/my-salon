@@ -103,7 +103,7 @@
             }
             $statement = $db->prepare($sql);
             $statement->execute();
-            echo "<script>alert(\"La modification des données et terminer avec succès\")</script>";
+            echo "<script>alert(\"La modification des données est terminer avec succès\")</script>";
             }catch(Exception $e){
                 die('Erreur : ' . $e->getMessage());
             }

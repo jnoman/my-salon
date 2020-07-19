@@ -25,6 +25,7 @@
                     <th scope="col">nom client</th>
                     <th scope="col">date rendez-vous</th>
                     <th scope="col">prix</th>
+                    <th scope="col">etat reservation</th>
                     <th scope="col">supprimer</th>
                 </tr>
                 </thead>
