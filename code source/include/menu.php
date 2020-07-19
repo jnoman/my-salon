@@ -1,7 +1,4 @@
 <?php
-    session_start();
-    $_SESSION['id']='3';
-    $_SESSION['type']='client';
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
