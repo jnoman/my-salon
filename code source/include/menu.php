@@ -1,4 +1,9 @@
 <?php
+
+session_start();
+
+$_SESSION['id']='1';
+$_SESSION['type']='admin';
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>

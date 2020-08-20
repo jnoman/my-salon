@@ -11,7 +11,13 @@ if(!empty($_POST)){
     if($row['email'] == $email && $row['password_user'] == $password){
         session_start();
        $_SESSION["user"] = $row['email'];
-       $_SESSION["mtp"] = $row['password_user'];
+	   $_SESSION["mtp"] = $row['password_user'];
+
+	   
+	   $_SESSION['id']=$row['idUser'];
+	   $_SESSION['type']=$row['roles'];
+	   
+	   
        header("Location: index.php");
     }else{
         $status = false;
@@ -28,7 +34,7 @@ if(!empty($_POST)){
 				<h3>Sign In</h3>
 			</div>
 			<div class="card-body">
-				<form  action="login.php" method="POST">
+				<form  action="connection.php" method="POST">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>

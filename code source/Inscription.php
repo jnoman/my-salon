@@ -7,7 +7,6 @@
                 $prenom = $_POST['prenom'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
-                $role=$_POST['role'];
                 $db = Database::connect();
                 
                   if(empty($nom)){
@@ -22,12 +21,9 @@
                     elseif(empty($password)){
                       $alert = 'ecrire votre password ';
                     }
-                    elseif(empty($role)){
-                        $alert = 'choisi role ';
-                    }
                   else{
                     
-                    $stm=$db->query("INSERT INTO users VALUES ('','$nom','$prenom','$email','$password','$role')");
+                    $stm=$db->query("INSERT INTO users VALUES ('','$nom','$prenom','$email','$password','client')");
                     header("Location: index.php");
                     }
                   }
@@ -83,21 +79,6 @@
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="email" name="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Role</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="role">
-                                            <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option name="client" value="client">client</option>
-                                            <option name="coiffeur" value="coiffeur">coiffeur</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
