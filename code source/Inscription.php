@@ -7,7 +7,6 @@
                 $prenom = $_POST['prenom'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
-                $role=$_POST['role'];
                 $db = Database::connect();
                 
                   if(empty($nom)){
@@ -22,13 +21,10 @@
                     elseif(empty($password)){
                       $alert = 'ecrire votre password ';
                     }
-                    elseif(empty($role)){
-                        $alert = 'choisi role ';
-                    }
                   else{
                     
-                    $stm=$db->query("INSERT INTO users VALUES ('','$nom','$prenom','$email','$password','$role')");
-                    header("Location: index.php");
+                    $stm=$db->query("INSERT INTO users VALUES ('','$nom','$prenom','$email','$password','client')");
+                    header("Location: connection.php");
                     }
                   }
             ?>
@@ -57,13 +53,13 @@
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="nom">
+                                            <input class="input--style-5" type="text" name="nom"  minlength="4" pattern="[A-Z][a-zA-Z]*$" >
                                             <label class="label--desc">first name</label>
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="prenom">
+                                            <input class="input--style-5" type="text" name="prenom"  minlength="4" pattern="[A-Z][a-zA-Z]*$" >
                                             <label class="label--desc">last name</label>
                                         </div>
                                     </div>
@@ -74,7 +70,7 @@
                             <div class="name">Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="email"  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,3})$"  >
                                 </div>
                             </div>
                         </div>
@@ -82,22 +78,7 @@
                             <div class="name">Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Role</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="role">
-                                            <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option name="client" value="client">client</option>
-                                            <option name="coiffeur" value="coiffeur">coiffeur</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
+                                    <input class="input--style-5" type="password" name="password"   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" >
                                 </div>
                             </div>
                         </div>

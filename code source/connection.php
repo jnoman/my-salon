@@ -3,16 +3,22 @@
 $email = $password = $erreur  = "";
 $status = true;
 if(!empty($_POST)){
+
   $email = $_POST["email"];
   $password = $_POST["password"];
+
   $db = Database::connect();
-  $stmt = $db->query("SELECT email,password_user FROM users");
+  $stmt = $db->query("SELECT * FROM users");
+
   while ($row = $stmt->fetch()){
-    if($row['email'] == $email && $row['password_user'] == $password){
-        session_start();
-       $_SESSION["user"] = $row['email'];
-       $_SESSION["mtp"] = $row['password_user'];
-       header("Location: index.php");
+    if($row['email']==$email && $row['password_user']==$password){
+
+		header("Location: index.php");
+		
+		session_start();
+	    $_SESSION['id']=$row['idUser'];
+	    $_SESSION['type']=$row['roles'];
+	   
     }else{
         $status = false;
         $erreur = "Erreur form n'est pas valide";
@@ -28,7 +34,7 @@ if(!empty($_POST)){
 				<h3>Sign In</h3>
 			</div>
 			<div class="card-body">
-				<form  action="login.php" method="POST">
+				<form  action="connection.php" method="POST">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -50,7 +56,6 @@ if(!empty($_POST)){
 					</div>
 				</form>
 			</div>
-
 
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
