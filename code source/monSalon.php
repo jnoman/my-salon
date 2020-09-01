@@ -18,7 +18,7 @@
         $item = $statement->fetch();
         $statement1 = $db->prepare("Select * from ville");
         $statement1->execute(); 
-        echo '<form method="POST" id="foo" action="" enctype="multipart/form-data"><div class="divstandard">
+        echo '<form method="POST" id="foo" action="" enctype="multipart/form-data"><div class="container">
             <script language="JavaScript">
                 function showPreview(ele)
                 {
@@ -36,7 +36,7 @@
                     window.location.href = "index.php";
                 }
             </script>
-            <div class="divstandard">
+            <div class="container">
                 <input type="file" name="imageSalon" accept="image/*" OnChange="showPreview(this)">
                 <hr>
                 <img id="imgAvatar" src="data:image/jpeg;base64,'.base64_encode($item['image'] ).'" class="rounded mx-auto d-block" style="width: 800px;height:300px;margin-bottom: 50px;">

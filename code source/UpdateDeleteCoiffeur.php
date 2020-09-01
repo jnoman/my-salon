@@ -36,14 +36,14 @@
                         }
             }
             </script>
-            <div class="divstandard">
+            <div class="container">
             <input type="file" name="imageCoi" accept="image/*" OnChange="showPreview(this)">
             <hr>
             <img id="imgAvatar" src="data:image/*;base64,'.base64_encode($item['image'] ).'" class="rounded mx-auto d-block" style="width: 500px;height:300px;margin-bottom: 50px;">
             </div>
 
 
-                <div class="divstandard"  style="margin-left:250px;  margin-right:250px" >
+                <div class="container"  style="margin-left:250px;  margin-right:250px" >
                 
                         <div class="form-row">
                         <div class="form-group col-md-6">

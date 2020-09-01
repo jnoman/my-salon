@@ -50,7 +50,7 @@
     $statement->execute();
     if($statement->rowCount() > 0)
     {
-        echo '<div class="divstandard"><table class="table table-striped">
+        echo '<div class="container"><table class="table table-striped">
             <div class="row row-cols-1 row-cols-md-3">';
             while($row = $statement->fetch()) {
                 echo '<form method="POST" action="" name="search-form">

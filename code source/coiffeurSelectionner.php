@@ -19,7 +19,7 @@
         if($item = $statement->fetch())
         {
             echo '<form method="POST" action="">
-                <div class="divstandard divcard">
+                <div class="container divcard">
                     <div class="card mb-3" style="width: 100%;height:400px;">
                         <div class="row no-gutters">
                             <div class="col-md-8">
@@ -101,11 +101,9 @@
                 $statement = $db->prepare("SELECT employe.id_employe FROM resrvation,employe WHERE employe.id_salon=$idSalon and employe.id_employe not in(SELECT id_employe FROM resrvation WHERE date_debut>='$dateReserv $timeReserv' and date_debut<=('$dateReserv $timeReserv' + INTERVAL duree MINUTE)) order by employe.id_employe");
                 $statement->execute();
                 $item1 = $statement->fetch();
-                echo "<script>alert('".$item1['id_employe']."');</script>";
                 $statement1 = $db->prepare("INSERT INTO resrvation(id_employe,idUser,date_debut,duree,etat_reservation,prixT) VALUES(".$item1['id_employe'].",$id,'$dateReserv $timeReserv',$dureeT,'en attente',$prixT)");
                 $statement1->execute();
                 $last_id = $db->lastInsertId();
-                echo "<script>alert('$last_id');</script>";
                 foreach($_POST['selectservice'] as $selectservice) 
                 {
                     $statement2 = $db->prepare("INSERT INTO lignereservation(id_service,id_reservation) VALUES($selectservice,$last_id)");

@@ -11,7 +11,7 @@
     else
     {
         echo '<form method="POST" action="">
-            <div class="divstandard">
+            <div class="container">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Nom Service</label>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Durée</label>
+                    <label>Durée en heure</label>
                     <input type="time" min="00:05" max="02:00" class="form-control" name="duree" required>
                 </div>
                 <button type="submit" class="btn btn-info btn-lg" name="addService">ajouter</button>

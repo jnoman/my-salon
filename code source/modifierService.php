@@ -19,7 +19,7 @@
         if($item = $statement->fetch())
         {
             echo '<form method="POST" action="">
-                <div class="divstandard">
+                <div class="container">
                     <div class="form-group">
                         <label>Nom Service</label>
                         <input type="text" class="form-control" name="nomService" minlength="5" pattern="^[a-zA-Z_\- \']{5,}$" required value="'.$item["nom_service"].'">

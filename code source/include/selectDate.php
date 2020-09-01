@@ -17,7 +17,7 @@ if($duree)
     $row1 = mysqli_fetch_array($result1);
     $sql="SELECT (a.date_debut + INTERVAL a.duree MINUTE) AS free_after FROM resrvation a,employe WHERE NOT EXISTS ( SELECT 1 FROM resrvation b,employe WHERE b.id_employe=employe.id_employe and employe.id_salon=$id and b.date_debut BETWEEN (a.date_debut + INTERVAL a.duree MINUTE) AND (a.date_debut + INTERVAL a.duree MINUTE) + INTERVAL ".$duree." MINUTE - INTERVAL 1 MICROSECOND) AND if(CURRENT_DATE='$date', (a.date_debut + INTERVAL a.duree MINUTE) BETWEEN CURRENT_TIMESTAMP AND '$date 19:43:50',(a.date_debut + INTERVAL a.duree MINUTE) BETWEEN '$date ".$row1['date_debut_travail']."' AND '$date ".$row1['date_fin_travail']."') and a.id_employe=employe.id_employe and employe.id_salon=$id";
     $result = mysqli_query($con,$sql);
-
+    
     if($row = mysqli_fetch_array($result)) {
         echo "rendez-vous commence à : <p style='display: inline;'>".date("H:i",strtotime($row['free_after']))."</p>";
         echo '<input type="hidden" name="timeReserv" value="'.date("H:i:s",strtotime($row1['free_after'])).'">';
@@ -27,7 +27,7 @@ if($duree)
     {
         if($date==date('Y-m-d'))
         {
-            if(date("H:i",strtotime(date("H:i")." +10 minutes + $duree minutes"))<date("H:i",strtotime($row['date_fin_travail'])))
+            if(date("H:i",strtotime(date("H:i")." +10 minutes + $duree minutes"))<date("H:i",strtotime($row1['date_fin_travail'])))
             {
                 echo "rendez-vous commence à : <p style='display: inline;'>".date("H:i",strtotime(date("H:i")." +10 minutes"))."</p>";
                 echo '<input type="hidden" name="timeReserv" value="'.date("H:i:s",strtotime(date("H:i")." +10 minutes")).'">';

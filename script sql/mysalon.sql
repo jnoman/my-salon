@@ -103,6 +103,7 @@ CREATE TABLE `resrvation` (
   `date_debut` datetime NOT NULL,
   `date_fin` datetime NOT NULL,
   `etat_reservation` varchar(254) NOT NULL,
+  `duree` time not null,
   `prixT` decimal(8,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

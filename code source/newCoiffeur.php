@@ -27,8 +27,8 @@
                 }
       }
         </script>
-            <div class="divstandard" style="margin-left:250px;  margin-right:250px" >
-                    <div class="divstandard">
+            <div class="container" style="margin-left:250px;  margin-right:250px" >
+                    <div class="container">
                         <input type="file" name="imageCoi" accept="image/*" OnChange="showPreview(this)" required><hr>
                         <img id="imgAvatar" class="rounded mx-auto d-block" style="width: 500px;height:300px;margin-bottom: 50px;">
                     </div>

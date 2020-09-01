@@ -17,7 +17,7 @@
         $statement->execute();
         if ($statement->rowCount() > 0) {
             // output data of each row
-            echo '<div class="divstandard"><table class="table table-striped">
+            echo '<div class="container"><table class="table table-striped">
                 <thead>
                 <tr>
                     <th scope="col">id service</th>
@@ -45,7 +45,7 @@
         else {
             echo '<div class="messageErreur"><p class="text-center font-weight-bolder">Aucune service</p></div>';
         }
-        echo '<div class="divstandard"><a href="ajouterService.php"><button type="button" class="btn btn-info btn_stndard">Ajouter service</button></a></div>';
+        echo '<div class="container"><a href="ajouterService.php"><button type="button" class="btn btn-info btn_stndard">Ajouter service</button></a></div>';
         Database::disconnect();
         echo '<script>$("tr[data-href]").on("click", function() {
             document.location = $(this).data("href");

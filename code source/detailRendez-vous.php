@@ -26,7 +26,7 @@
 
         if ($statement->rowCount() > 0) {
             // output data of each row
-            echo '<div class="divstandard"><table class="table table-striped">
+            echo '<div class="container"><table class="table table-striped">
                 <thead>
                 <tr>
                     <th scope="col">id service</th>
